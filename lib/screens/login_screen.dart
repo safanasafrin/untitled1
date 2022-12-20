@@ -34,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Text("Login",style: TextStyle(color: Colors.black,fontSize: 40,fontWeight: FontWeight.bold),),
                   ),
 
-                )
+                ),
             ),
             Padding(padding: EdgeInsets.all(30.0),
               child: Column(
@@ -88,7 +88,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   //     // child: Text('Login',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
                   //   ),
                   // ),
-                  MaterialButton(onPressed: (){
+                  MaterialButton(onPressed: (
+                      ){
                     // Navigator.push(context, ProfileScreen.routeName);
                     Navigator.pushNamedAndRemoveUntil(context,HomeScreen.routeName,(route) =>true);
 

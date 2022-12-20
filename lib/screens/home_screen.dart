@@ -15,11 +15,25 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      body: Center(
-        child: Lottie.asset('assets/animations/tasks.json'),
+      body:
+      Column(
+            children:[
+              Lottie.asset('assets/animations/tasks.json',
+            repeat: false,
+            fit: BoxFit.cover,
+          ),
+              Column(
+                children: [Text('Hi Safrin',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.black),
+                )
+                  ,Text('You have logged in Successfuly',style: TextStyle(fontSize: 18,fontWeight: FontWeight.normal,color: Colors.black),
+                  )
+                ],
+              ),
+            ],
 
+          ),
 
-               ),
     );
+
   }
 }
